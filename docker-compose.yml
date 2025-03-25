@@ -8,7 +8,7 @@ services:
     networks:
       - todowebapi-network
     ports:
-      - 1433:1433
+      - 1455:1433
     volumes:
       - mssql:/var/opt/mssql
       - mssql-extensibility:/var/opt/mssql-extensibility
