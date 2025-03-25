@@ -26,3 +26,23 @@ https://localhost:7098/swagger/index.html
 docker compose up -d
 docker compose down
 ```
+
+## Add Packages
+
+```bash
+dotnet add package NSwag.AspNetCore
+dotnet add package Microsoft.EntityFrameworkCore -v 6.0.4
+dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.4
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer -v 6.0.4
+dotnet add package Microsoft.EntityFrameworkCore.Tools -v 6.0.4
+```
+
+## Install ef tool globall
+dotnet tool install --global dotnet-ef
+
+## Create Migration
+
+```bash
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+```
